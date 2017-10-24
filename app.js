@@ -6,10 +6,10 @@ const hostname = '0.0.0.0';
 const port = 8080;
 
 let handle = {};
-handle['/'] = handler.indexPage;
-handle['/index'] = handler.indexPage;
-handle['/pagenotfound'] = handler.notFoundPage;
-handle['/about'] = handler.aboutPage;
-handle['/blog'] = handler.blogPage;
+handle["/"] = handler.indexPage;
+handle["/index"] = handler.indexPage;
+handle["/pagenotfound"] = handler.notFoundPage;
+handle["/about"] = handler.aboutPage;
+handle["/blog"] = handler.blogPage;
 
 server.startServer(hostname, port, router.route, handle);
