@@ -7,8 +7,8 @@ const port = 8080;
 
 let handle = {};
 // pages here
-handle[''] = handler.indexPage;
-handle['./index'] = handler.indexPage;
+handle['/'] = handler.indexPage;
+handle['/index'] = handler.indexPage;
 
 handle['/pagenotfound'] = handler.notFoundPage;
 handle['/about'] = handler.aboutPage;

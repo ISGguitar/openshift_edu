@@ -1,11 +1,15 @@
 function route(urlRequested, handle, res) {
 	if (handle[urlRequested] === 'function') {
-		console.log('function found');
-		handle[urlRequested](res);
+		res.statusCode = 200;
+ 		res.setHeader('Content-Type', 'text/plain');
+ 		res.end(`funcFound:${urlRequested}`);
+		//handle[urlRequested](res);
 		//..
 	} else {
-		console.warn('page not found')
-		handle['/pagenotfound'](res);
+		res.statusCode = 200;
+ 		res.setHeader('Content-Type', 'text/plain');
+ 		res.end(`urlRequested:${urlRequested}`);
+		//handle['/pagenotfound'](res);
 		//..
 	}
 }
