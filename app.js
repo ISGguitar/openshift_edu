@@ -1,6 +1,6 @@
-const server = require('js/server');
-const handler = require('js/handler');
-const router = require('js/router');
+const server = require('./js/server');
+const handler = require('./js/handler');
+const router = require('./js/router');
 
 const hostname = '0.0.0.0';
 const port = 8080;
