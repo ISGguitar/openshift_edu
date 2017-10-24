@@ -1,6 +1,8 @@
+const getHtml = require('./getDataFromFile').getHtml;
+const getCSS = require('./getDataFromFile').getCssFromFile;
+
 function indexPage(res) {
-	responseFunc(res);
-	//..
+	getHtml('index', res);
 }
 
 function aboutPage(res) {
@@ -14,19 +16,20 @@ function blogPage(res) {
 }
 
 function notFoundPage(res) {
-	res.statusCode = 404;
- 	res.setHeader('Content-Type', 'text/plain');
- 	res.end('Page not found\n');
-	//..
+	getHtml('pagenotfound', res);
 }
 
 function responseFunc(res) {
-	res.statusCode = 200;
- 	res.setHeader('Content-Type', 'text/plain');
- 	res.end('Hello World\n');
+	getHtml('I_Will_Get_An_Error', res);
+}
+
+function getCSSpage(res) {
+	getCSS(res);
 }
 
 module.exports.indexPage = indexPage;
 module.exports.notFoundPage = notFoundPage;
 module.exports.aboutPage = aboutPage;
 module.exports.blogPage = blogPage;
+module.exports.getCSSpage = getCSSpage;
+
