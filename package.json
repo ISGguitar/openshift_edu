@@ -1,9 +1,14 @@
-{
+idf{
   "name": "openshift_edu",
   "version": "0.0.1",
   "description": "",
   "main": "app.js",
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
