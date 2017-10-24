@@ -2,7 +2,7 @@ function route(urlRequested, handle, res) {
 	if (handle[urlRequested] === 'function') {
 		handle[urlRequested](res);
 		//..
-	} ellse {
+	} else {
 		handle['/pagenotfound'](res);
 		//..
 	}
