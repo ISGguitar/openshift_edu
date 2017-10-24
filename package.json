@@ -1,7 +1,7 @@
-idf{
+{
   "name": "openshift_edu",
   "version": "0.0.1",
-  "description": "",
+  "description": "must work",
   "main": "app.js",
   "engine": {
     "node": "*",
