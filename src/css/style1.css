@@ -1,3 +1,58 @@
-body {
-	
+body {	
+	background: #6f6f6f;
 }
+
+header {
+	margin: auto 5em;
+	/*background: #FAFAFA;*/
+	background: #F4F4F4;
+	color: #2f2f2f;
+	font-size: 24px;
+	text-align: left;
+}
+
+nav {
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+	background: #2f2f2f;
+
+	text-align: left;		
+	font-size: 2.2em;
+	font-style: italic;
+	color: #f0f0f0;
+
+}
+
+#social {
+	background: #D5D5D5;
+	color: #2f2f2f;
+}
+
+header #social {
+	text-align: right;
+}
+
+#social ul li {
+	display: inline-block;
+}
+
+nav li {
+	display: inline-block;
+
+}
+
+article {
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+
+	background: #F4F4F4;
+	color: #2f2f2f;
+}
+
+/*font*/
+h1, h2, h3, h4, p {
+
+}
+
