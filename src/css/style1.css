@@ -1,6 +1,7 @@
 body {	
 	background: #8f8f8f;
-	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 1.2em;
 	margin: auto;
 	width: 96%;
@@ -12,12 +13,17 @@ header {
 	color: #2f2f2f;
 }
 
+header h1 {
+	padding-top: 0.5em;
+}
+
 #social {
 	font-family: 'Berkshire Swash', cursive;	
 	background: #D5D5D5;
 	color: #2f2f2f;
 	text-align: right;
-	padding: 0 1em 0;
+	font-size: 1.2em;
+	padding: 0.5em;
 	margin: auto;
 }
 
@@ -25,6 +31,15 @@ header {
 	display: inline-block;
 	padding: 0.1em 0.4em 0.1em;
 	margin: auto;
+}
+
+ul li, li, ul, ol {
+	font-family: 'Courgette', cursive;	
+	margin-left: 0.4em;	
+}
+
+ul {
+	list-style: none;
 }
 
 footer {
@@ -39,10 +54,12 @@ footer #social {
 	background: #F4F4F4;
 	color: #2f2f2f;
 	text-align: center;
+	font-size: 2em;
 }
 
 nav li {
 	display: inline-block;
+	font-family: 'Courgette', cursive;	
 }
 
 nav {
@@ -65,14 +82,7 @@ article {
 
 }
 
-/*font
-font-family: 'Rokkitt', serif;
-font-family: 'Alegreya', serif;
-font-family: 'Cinzel', serif;
-font-family: 'Quattrocento Sans', sans-serif;
-font-family: 'Courgette', cursive;
-font-family: 'Berkshire Swash', cursive;
-*/
+
 h1 {
 	text-indent: 1em;
 	font-family: 'Quattrocento Sans', sans-serif;
@@ -93,20 +103,6 @@ p {
 	padding-left: 1em;
 }
 
-ol {
-	padding-bottom: 8px;
-}
-
-ul li, li, ul, ol {
-	font-family: 'Courgette', cursive;
-	/*margin-bottom: 0.1em;*/
-	padding-bottom: 0.1em;
-	margin-left: 0.4em;	
-}
-
-ul {
-	list-style: none;
-}
 
 .contentBlock {
 	background: #D4D4D4;
@@ -117,8 +113,9 @@ ul {
 }
 
 hr {
-	border-style: inset;
-    border-width: 2px;
+	border-style: solid;
+    border-width: 0.04em;
+    border-color: #AAAAAA;
     width: 80%;
     margin: auto;
 }
@@ -135,10 +132,14 @@ nav a {
 a {
 	color: #2f2f2f;
 	text-decoration: none;
+	-webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: 0.5s;
 }
 
 a:hover {
 	color: #444fFF;
+	-webkit-transition: 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: 0.3s;
 }
 
 img {
