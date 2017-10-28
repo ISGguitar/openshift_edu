@@ -12,7 +12,7 @@ handle["/"] = handler.indexPage;
 handle["/index"] = handler.indexPage;
 handle["/pagenotfound"] = handler.notFoundPage;
 handle["/about"] = handler.aboutPage;
-handle["/blog"] = handler.blogPage; 
+handle["/blog"] = handler.blogPage;
 // css as page
 handle["/css/style"] = handler.getCSSpage;
 
