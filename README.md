@@ -1,3 +1,1 @@
 # openshift_edu
-
- 
