@@ -6,7 +6,7 @@ function startServer(hostname, port, route, handle) {
 		let urlRequested = url.parse(req.url).pathname;		
 		route(urlRequested, handle, res);		
 	}).listen(port, hostname, function() {
-		console.log('Server is running');
+		console.log(`Server is running on ${hostname}:${port}`);
 	});
 }
 

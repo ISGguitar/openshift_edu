@@ -6,21 +6,15 @@ function indexPage(res) {
 }
 
 function aboutPage(res) {
-	responseFunc(res);
-	//..
+	getHtml('error', res);
 }
 
 function blogPage(res) {
-	responseFunc(res);
-	//..
+	getHtml('error', res);
 }
 
 function notFoundPage(res) {
 	getHtml('pagenotfound', res);
-}
-
-function responseFunc(res) {
-	getHtml('I_Will_Get_An_Error', res);
 }
 
 function getCSSpage(res) {

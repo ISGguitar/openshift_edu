@@ -3,48 +3,44 @@ const fs = require('fs');
 function getDataFromFile(dataPath, contentType, res) {
 
 	var data = "";
-	const readStream = fs.createReadStream(dataPath).setEncoding('utf8');
-	//if fs.exists()
-	//if file not found - page not found
-	//res.statusCode = 404;
- 	//res.setHeader('Content-Type', 'text/plain');
-	//res.end(`Error\n${err}`);
-	//..
+	if (!fs.existsSync(dataPath)) {
+			console.error(`File ${dataPath} not found`);
+			res.statusCode = 404;
+			res.setHeader('Content-Type', 'text/plain');
+			res.end('Page not found');
+	} else {
+		const readStream = fs.createReadStream(dataPath).setEncoding('utf8');
 
+		readStream.on('data', (chunk) => {
+				
+			console.info('stream is reading');			
+			data += chunk;
+		});
 
-	//read stream event:'data'
-	readStream.on('data', (chunk) => {
-		console.info('stream is reading');
-		data += chunk;
-	});
+		readStream.on('end', () => {
+			console.info('end of file');
+			res.statusCode = 200;
+			res.setHeader('Content-Type', contentType)		
+			res.end(data);
+		});
 
-	//no data will be consumed event:'end'
-	readStream.on('end', () => {
-		console.info('end of file');
-		res.statusCode = 200;
-		res.setHeader('Content-Type'. contentType)		
-		res.end(data);
-	});
+		readStream.on('close', () => {
+			console.info('stream is closed');		
+		});
 
-	//close stream event:'close'
-	readStream.on('close', () => {
-		console.info('stream is closed');
-		
-	});
-
-	//error  event:'error'
-	readStream.on('error', (err) => {
-		console.error(`Some error:\n${err}`);
-		res.statusCode = 500;
-		res.setHeader('Content-Type'. 'text/html')
-		res.write('Internal Server Error')
-		res.end(err);
-	});
+		readStream.on('error', (err) => {
+			console.error(`Some error:\n${err}`);
+			res.statusCode = 500;
+			res.setHeader('Content-Type', 'text/plain');
+			res.write('Internal Server Error\n')
+			res.end(err);
+		});
+	}
 }
 
-function getHtml(fileName, res){
-	let path=`./src/html/${fileName}.html`;
-	getDataFromFile(path, 'text/html', res);
+function getHtml(fileName, res) {
+	let dataPath = `./src/html/${fileName}.html`;
+	getDataFromFile(dataPath, 'text/html', res);
 }
 
 //get css too
