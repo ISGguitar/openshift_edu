@@ -1,10 +1,10 @@
 function route(urlRequested, handle, res) {
-	if (typeof handle[urlRequested] === 'function') {
+	if (typeof handle[urlRequested] === 'function' ) {
 		handle[urlRequested](res);
 		//..
 	} else {		
-		handle["/pagenotfound"](res);
-		//..
+		res.writeHead('404');
+		res.end('Page not found');
 	}
 }
 

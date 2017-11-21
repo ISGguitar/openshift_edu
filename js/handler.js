@@ -1,29 +1,30 @@
-const getHtml = require('./getDataFromFile').getHtml;
-const getCSS = require('./getDataFromFile').getCssFromFile;
+const getDataFromFile = require('./getDataFromFile');
 
 function indexPage(res) {
-	getHtml('index', res);
-}
-
-function aboutPage(res) {
-	getHtml('error', res);
+	getDataFromFile.getHtml('index', res);
 }
 
 function blogPage(res) {
-	getHtml('error', res);
+	getDataFromFile.getHtml('blog', res);
 }
 
-function notFoundPage(res) {
-	getHtml('pagenotfound', res);
+function portfolioPage(res) {
+	getDataFromFile.getHtml('portfolio', res);
 }
 
-function getCSSpage(res) {
-	getCSS(res);
+
+function getCSS(requiredUrl, res) {
+	
+	getDataFromFile.getCssFromFile(requiredUrl, res);
+}
+
+function getJS(requiredUrl, res) {
+	getDataFromFile.getJavaScriptFromFile(requiredUrl, res);
 }
 
 module.exports.indexPage = indexPage;
-module.exports.notFoundPage = notFoundPage;
-module.exports.aboutPage = aboutPage;
 module.exports.blogPage = blogPage;
-module.exports.getCSSpage = getCSSpage;
+module.exports.portfolioPage = portfolioPage;
 
+module.exports.getCSS = getCSS;
+module.exports.getJS = getJS;

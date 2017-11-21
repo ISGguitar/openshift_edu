@@ -11,21 +11,21 @@ function getDataFromFile(dataPath, contentType, res) {
 	} else {
 		const readStream = fs.createReadStream(dataPath).setEncoding('utf8');
 
-		readStream.on('data', (chunk) => {
-				
-			console.info('stream is reading');			
+		readStream.on('data', (chunk) => {			
+			// console.info('stream is reading');			
 			data += chunk;
 		});
 
 		readStream.on('end', () => {
-			console.info('end of file');
+			// console.info('end of file');
+			// console.log(data)
 			res.statusCode = 200;
 			res.setHeader('Content-Type', contentType)		
 			res.end(data);
 		});
 
 		readStream.on('close', () => {
-			console.info('stream is closed');		
+			// console.info('stream is closed');		
 		});
 
 		readStream.on('error', (err) => {
@@ -43,11 +43,14 @@ function getHtml(fileName, res) {
 	getDataFromFile(dataPath, 'text/html', res);
 }
 
-//get css too
+ function getCssFromFile(fileName, res) {
+ 	getDataFromFile(`./src/css${fileName}`, 'text/css', res);
+}
 
- function getCssFromFile(res) {
- 	getDataFromFile('./src/css/style1.css', 'text/css', res);	
+function getJavaScriptFromFile(fileName, res) {
+	getDataFromFile(`./src/js${fileName}`, 'text/javascript', res);
 }
 
 module.exports.getHtml = getHtml;
 module.exports.getCssFromFile = getCssFromFile;
+module.exports.getJavaScriptFromFile = getJavaScriptFromFile;
