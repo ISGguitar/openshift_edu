@@ -3,7 +3,8 @@ function route(urlRequested, handle, res) {
 		handle[urlRequested](res);
 		//..
 	} else {		
-		res.writeHead('404');
+		res.statusCode = 404;
+		res.setHeader('Content-Type', 'text/plain');
 		res.end('Page not found');
 	}
 }
