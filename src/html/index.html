@@ -1,117 +1,146 @@
 <!doctype html>
-
+<html lang=eng>
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>960 grid 12 test</title>
-	<link rel="stylesheet" type="text/css" href="960_12_col.css">
-	<link rel="stylesheet" type="text/css" href="960_12_style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Bootstrap 4</title>
+
 </head>
 
-<body>
-	<header class="container_12">
+<body class="pt-1">
+	<header class="text-primary">
 		<!-- Logo and social -->
-		<h1 class="grid_12">ISGguitar</h1>
-		<ul class="grid_11 prefix_10">
-			<em class="grid_12 pull_1">Social media:</em>
-			<li class="grid_1 pull_2 alpha"><a href="https://www.youtube.com/channel/UCJWE98MQhT25zpPnuNzqcTw">YouTube</a></li>
-			<li class="grid_1 pull_2"><a href="https://twitter.com/ISGguitar">Twitter</a></li>
-			<li class="grid_1 pull_2"><a href="https://www.facebook.com/isgguitar">FaceBook</a></li>
-			<li class="grid_1 pull_2"><a href="https://www.instagram.com/isgguitar/">Instagram</a></li>
-		</ul>
+
+		<h1 class="col d-flex flex-row">ISGguitar</h1>
+		<div class="col d-flex flex-row-reverse">
+			<ul class="list-group list-group-flush mw-25 mh-25">
+				<em class="list-group-item list-group-item-light">Social media:</em>
+				<li class="d-flex justify-content-center"><a class="nav-link text-info" href="https://www.youtube.com/channel/UCJWE98MQhT25zpPnuNzqcTw">YouTube</a></li>
+				<li class="d-flex justify-content-center"><a class="nav-link text-info" href="https://twitter.com/ISGguitar">Twitter</a></li>
+				<li class="d-flex justify-content-center"><a class="nav-link text-info" href="https://www.facebook.com/isgguitar">FaceBook</a></li>
+				<li class="d-flex justify-content-center"><a class="nav-link text-info" href="https://www.instagram.com/isgguitar/">Instagram</a></li>
+			</ul>
+		</div>
 	</header>
 
-	<nav class="container_12">		
-		<b class="grid_3 alpha">Menu:</b>
-		<li class="grid_3"><a href="index">About</a></li>
-		<li class="grid_3"><a href="blog">Blog</a></li>
-		<li class="grid_3"><a href="portfolio">Portfolio</a></li>			
+	<nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+		<b class="navbar-brand d-flex justify-content-end mt-1 text-primary">Menu:</b>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+
+  		</button>
+		<div class="collapse navbar-collapse text-center" id="navbarText">
+				<ul class="navbar-nav list-group bg-secondary mt-2 w-100">
+					<li class="nav-item list-group-item-action list-group-item-light bg-light"><a class="nav-link text-primary" href="index" class="nav-link text-primary pl-1">About</a></li>
+					<li class="nav-item list-group-item-action list-group-item-light bg-light"><a class="nav-link text-primary" href="blog" class="nav-link text-primary pl-1">Blog</a></li>
+					<li class="nav-item list-group-item-action list-group-item-light bg-light"><a class="nav-link text-primary" href="portfolio" class="nav-link text-primary pl-1">Portfolio</a></li>
+				</ul>
+
+		</div>
 	</nav>
 
-	<article class="container_12">
-		<h1>What's up?</h1>
+	<article class="container-fluid ml-1 pt-2">
+		<h3 class="py-2 ml-2">What's up?</h3>
 
 		<p>This is a web page about me, indipendent composer and musician. Prototype. It's necessary to fill this page with a content. That's why I've decided to fill up it with my story, to exclude random content on this web page. My job is done so I can start to study and try "css".</p>
 	</article>
 
-	<article class="container_12">
-		<h1>Composer and sound-designer</h1>
-		<img src="https://pp.userapi.com/c637422/v637422464/60705/u90JFHUOJvo.jpg" width="960px" alt="Picture with me">
-		<h2>About</h2>
+	<article class="container-fluid ml-1 pt-2">
+
+		<h3 class="py-2 ml-2">Composer and sound-designer</h3>
+		
+		<img class="col-md-12" src="https://pp.userapi.com/c637422/v637422464/60705/u90JFHUOJvo.jpg" alt="Picture with me">
+		<h4 class="ml-1 py-2">About</h4>
 		<p>My name is Sergei Ikonnikov and I love to create the music. I like to begin my music projects from the entire idea to the last notes. Usually I compose using virtual instruments in digital audio workstation on PC. It's almost true I work in digital only, but:</p>
-			<ul>
-				<li class="grid_12 alpha">-sometimes I record other people. Usually they are bass/guitar players or signers.</li>
-				<li class="grid_12 alpha">-sometimes I record myself. Yeah, Usually I record bass and electric guitar.</li>
-			</ul>	
-		<h2>Short story</h2>
+		<ul class="list-group">
+			<li class="list-group-item">-sometimes I record other people. Usually they are bass/guitar players or signers.</li>
+			<li class="list-group-item">-sometimes I record myself. Yeah, Usually I record bass and electric guitar.</li>
+			</ul>
+
+		<h3 class="py-2 ml-2">Short story</h3>
 		<p>I'm an independent composer and musician from Russia, borned in Novosibirsk city. I've started to learn guitar and play in local bands since 2003. I've started to learn digital recording in 2013 and tried myself as a composer/sound-designer. It was a time when indipendent company called "FateStudio" invited me to create games. That's how I started to create music/soundtracks since august 2013</p>
 		<hr>
-		<h2>Present days</h2>
+		<h3 class="py-2 ml-2">Present days</h3>
 		<p>I've got the experience and have a bunch of tracks, today. I've tried some DAWs (digital audio workstations) software and decided to use the last one from the list:</p>
 			<!-- hrefs -->
-			<ol class="grid_12 alpha">
-				<li><a href="https://ru.wikipedia.org/wiki/Adobe_Audition">Adobe Audition</a></li>
-				<li><a href="https://ru.wikipedia.org/wiki/FL_Studio">FL Studio</a></li>
-				<li><a href="https://ru.wikipedia.org/wiki/Steinberg_Cubase">Cubase</a></li>
-				<li><a href="https://ru.wikipedia.org/wiki/Propellerhead_Reason">Reason</a></li>
-				<li><a href="https://www.reaper.fm/">Reaper</a></li>
+			<ol class="list-group pb-4 w-50">
+				<a class="text-left" href="https://ru.wikipedia.org/wiki/Adobe_Audition"><li class="list-group-item list-group-item-action list-group-item-secondary text-primary">Adobe Audition</li></a>
+				<a class="text-left" href="https://ru.wikipedia.org/wiki/FL_Studio"><li class="list-group-item list-group-item-action list-group-item-secondary text-primary">FL Studio</li></a>
+				<a class="text-left" href="https://ru.wikipedia.org/wiki/Steinberg_Cubase"><li class="list-group-item list-group-item-action list-group-item-secondary text-primary">Cubase</li></a>
+				<a class="text-left" href="https://ru.wikipedia.org/wiki/Propellerhead_Reason"><li class="list-group-item list-group-item-action list-group-item-secondary text-primary">Reason</li></a>
+				<a class="text-left" href="https://www.reaper.fm/"><li class="list-group-item list-group-item-action list-group-item-secondary text-primary">Reaper</li></a>
 			</ol>
 		<p>I've learned mixing and mastering. I've learned how to use a virtual instruments and how to made them sound more natural, learned that not all of them could sound as natural as the real ones, so I'm always in the search in new ones to add them in my library.<br> Can't say that the live is so bright than I'm thinking about my live perfomances or daily practices cause of time. The time limits my possibilities but I'm still trying to study some instruments. Here's the list:</p>
 			<!-- можно ссылки на википедию закинуть -->
-			<ol class="grid_12 alpha">
-				<li>Electric guitar</li>
-				<li>Bass guitar</li>
-				<li>Ukulele</li>
-				<li>Drums</li>
-				<li>Piano / midi keys</li>
-				<li>Recorder(block flute)</li>
+			<ol class="list-group w-50">
+				<li class="list-group-item list-group-item-secondary">Electric guitar</li>
+				<li class="list-group-item list-group-item-secondary">Bass guitar</li>
+				<li class="list-group-item list-group-item-secondary">Ukulele</li>
+				<li class="list-group-item list-group-item-secondary">Drums</li>
+				<li class="list-group-item list-group-item-secondary">Piano / midi keys</li>
+				<li class="list-group-item list-group-item-secondary">Recorder(block flute)</li>
 			</ol>
 		<hr>
 	</article>
-	<article class="container_12">
-		<h2>Passion to music</h2>
-		<!-- <h3>Long story...</h3> -->
-		<h4>The first intrument</h4>
+	<article class="container-fluid ml-1 pt-2">
+		<h3 class="py-2 ml-2">Passion to music</h2>
+		<!-- <h3 class="py-2 ml-2">Long story...</h3> -->
+		<h5>The first intrument</h5>
 		<p>String music instruments is my passion from the begining. I'm telling about a guitar, ofcourse. Guitar was the first music instrument my hands reached when I grew up. I studied electric guitar the most part of my music life and learned how to play it without any help, except some advices from my friends. But I can't say that I've mastered guitar, I'm too far to become a local professional of guitar. So far so good I can play what I need.</p>
-		<h4>Digital Audio Workstations. First steps.</h4>
+		<h5>Digital Audio Workstations. First steps.</h5>
 		<p>My first record was published after some years past. The first steps were the most hard, because you never knew how this works or even will it work. All guitar tracks I've recorded were sounding not natural and got noises. I have no music tracks from those times...and I'm glad that I don't have any. New tracks sounds better and I can proud with them.</p>
-		<h4>Becoming a composer</h4>
+		<h5>Becoming a composer</h5>
 		<p>Working in IT industry I've met a lot of good people. Men who founded a a little company of indie developers were one of those good peaple.<br>I left my work to join them and try myself as a composer and sound-designer, after some time was spent on talks and to made a test tasks. It was a time "I wanted to start from the begining"&copy; so I've spent some time to get some money and leave to my new "work".<br>"This track is good, but we should move ahead."&copy; Andrew Viktorov<br>Those words were waiting for me after every track. It was joyful. Company was called "Fate Studio" and our ship couldn't make it.</p>
-		<h4>My first album, and goodbye to "Fate Studio".</h4>
+		<h5>My first album, and goodbye to "Fate Studio".</h5>
 		<p>Good times couldn't lasts forever. I've reached my limits in money, so I went to the job after some time. But I have a portfolio since those times attached on <a href="https://soundcloud.com/isgguitar">SoundCloud</a> website and I've learned a lot new. The list of my live instruments were:</p>
 			<!-- можно ссылки на википедию закинуть -->
-			<ul>
-				<li>Electric guitar</li>
-				<li>Bass guitar</li>
-				<li>Ukulele</li>
+			<ul class="list-group w-50">
+				<li class="list-group-item">Electric guitar</li>
+				<li class="list-group-item">Bass guitar</li>
+				<li class="list-group-item">Ukulele</li>
 			</ul>
 		<p>I've continued to improve my skill at a free time and passed to another important event of my life. I've decided to record my first full album. It was dedicated to my ex band called "Shine now". I called it "Dash". <a href="https://isgguitar.bandcamp.com/releases">Here's the link</a>. Album was done, I've got a lot of exp and got "level up". The points were spent on "play drums" skill. Yeah, I've played drums about a half year when album was done. "This track is good, but we should move ahead."&copy;</p>
 		<hr>
 	</article>
-	<article class="container_12">
-		<h2>Going on <a href="https://www.youtube.com/channel/UCJWE98MQhT25zpPnuNzqcTw">youTube</a></h2>
+	<article class="container-fluid ml-1 pt-2">
+		<h3 class="py-2 ml-2">Going on <a href="https://www.youtube.com/channel/UCJWE98MQhT25zpPnuNzqcTw">youTube</a></h3>
 		<p>These days I have a little <a href="https://www.youtube.com/channel/UCJWE98MQhT25zpPnuNzqcTw">youTube page</a> with a content. The list of my content:</p>
 			<!-- Нужно ссылки сделать на playlist'ы -->
-			<ul>
-				<li><a href="https://www.youtube.com/watch?v=nYtt_duW7rI&list=PL0KM-uKxPc8zxZiq2GkkmO_mz6PxPMLww">Instrumental music created by me</a></li>
-				<li><a href="https://www.youtube.com/watch?v=qmCVI19v-Os&list=PL0KM-uKxPc8xXnxzc3IzcBlq6W29ihgRZ">Some collabs with other musicians</a></li>
-				<li><a href="https://www.youtube.com/watch?v=XhNMbIdqLGI&list=PL0KM-uKxPc8yAuUJticPI1amn7CuM4Nr8">Guitar solos</a></li>
-				<li><a href="https://www.youtube.com/watch?v=sw0warZsGew&list=PL0KM-uKxPc8y3REkoKGonBBO8VtXkVD4u">Music covers</a></li>
-				<li><a href="https://www.youtube.com/watch?v=y91eQdDnNpM&list=PL0KM-uKxPc8yV0z8nmQEwrA4taOt1wmGv">Ukulele covers</a></li>
+		<ul class="list-group w-50">
+			<li class="list-group-item list-group-item-action list-group-item-primary"><a class="nav-link text-dark" href="https://www.youtube.com/watch?v=nYtt_duW7rI&list=PL0KM-uKxPc8zxZiq2GkkmO_mz6PxPMLww">Instrumental music created by me</a></li>
+			<li class="list-group-item list-group-item-action list-group-item-primary"><a class="nav-link text-dark" href="https://www.youtube.com/watch?v=qmCVI19v-Os&list=PL0KM-uKxPc8xXnxzc3IzcBlq6W29ihgRZ">Some collabs with other musicians</a></li>
+			<li class="list-group-item list-group-item-action list-group-item-primary"><a class="nav-link text-dark" href="https://www.youtube.com/watch?v=XhNMbIdqLGI&list=PL0KM-uKxPc8yAuUJticPI1amn7CuM4Nr8">Guitar solos</a></li>
+			<li class="list-group-item list-group-item-action list-group-item-primary"><a class="nav-link text-dark" href="https://www.youtube.com/watch?v=sw0warZsGew&list=PL0KM-uKxPc8y3REkoKGonBBO8VtXkVD4u">Music covers</a></li>
+			<li class="list-group-item list-group-item-action list-group-item-primary"><a class="nav-link text-dark" href="https://www.youtube.com/watch?v=y91eQdDnNpM&list=PL0KM-uKxPc8yV0z8nmQEwrA4taOt1wmGv">Ukulele covers</a></li>
 			</ul>
 		<p>I'm still not pleased with the quality of a content, so I'll continue to work on it. I have some TODO list to make it better and it'd be better.</p>
 		<hr>
 	</article>
 
-	<footer class="container_12">
-		<ul class="grid_12 alpha">
-			<p class="grid_11"><em>Social media:</em></p>
-			<li class="grid_2 push_2 alpha"><a href="https://www.youtube.com/channel/UCJWE98MQhT25zpPnuNzqcTw">YouTube</a></li>
-			<li class="grid_2 push_2"><a href="https://twitter.com/ISGguitar">Twitter</a></li>
-			<li class="grid_2 push_2"><a href="https://www.facebook.com/isgguitar">FaceBook</a></li>
-			<li class="grid_2 push_2"><a href="https://www.instagram.com/isgguitar/">Instagram</a></li>
-		</ul>
-		<p>Copyright &copy; 2017</p>
+	<footer class="ml-1 my-2 pt-2">
+
+		<div class="row d-flex justify-content-xs-center text-center">
+			<em class="col">Social media:</em>
+			<div class="w-100"></div>
+			<a class="col" href="https://www.youtube.com/channel/UCJWE98MQhT25zpPnuNzqcTw">YouTube</a>
+			<a class="col" href="https://twitter.com/ISGguitar">Twitter</a>
+			<a class="col" href="https://www.facebook.com/isgguitar">FaceBook</a>
+			<a class="col" href="https://www.instagram.com/isgguitar/">Instagram</a>
+		</div>
+		<div class="row justify-content-center">
+			<p>Copyright &copy; 2018</p>
+		</div>
 	</footer>
+
+	    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
  
 </html>
